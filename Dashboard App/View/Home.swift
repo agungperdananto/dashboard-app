@@ -33,9 +33,9 @@ struct Home: View {
                     ZStack{
                         Color.white.padding(.trailing, 30)
                         
-                        Color.white.cornerRadius(15).shadow(color: Color.black.opacity(0.04), radius: 5, x: 5, y:0)
+                        Color.white.cornerRadius(15).shadow(color: Color.black.opacity(0.04), radius: 5, x: 5, y: 0)
                     }
-                ).ignoresSafeArea()
+                )
 //            Home View
             VStack(spacing: 15){
 
