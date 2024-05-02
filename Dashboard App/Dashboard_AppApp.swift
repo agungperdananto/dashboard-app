@@ -11,7 +11,18 @@ import SwiftUI
 struct Dashboard_AppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
         }
+        .windowStyle(HiddenTitleBarWindowStyle())
+    }
+}
+
+// Remove textfield ring
+
+extension NSTextField{
+    
+    open override var focusRingType: NSFocusRingType{
+        get{return .none}
+        set{}
     }
 }
